@@ -1,0 +1,49 @@
+//
+//  FSSystem-PrefixHeader.pch
+//  FSSystem
+//
+//  Created by Kim Ok Chol on 1/9/15.
+//  Copyright (c) 2015 damy. All rights reserved.
+//
+
+#ifndef YiDong_PrefixHeader_pch
+#define YiDong_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import <CoreData/CoreData.h>
+#import "SuperViewController.h"
+#import "SuperTableViewController.h"
+#import "Global/GlobalFunc.h"
+#import "CommService/CommMgr.h"
+#import "Global/ConstString.h"
+#import "Utilities/Defines/Macros.h"
+#import "SVProgressHUD.h"
+#import "Config.h"
+#import "Utilities/Defines/CommonHdr.h"
+#import "Library/AFNetworking/UIImageView+AFNetworking.h"
+#import "Library/IQKeyBoardManager/IQKeyboardManager.h"
+#import "Utilities/MacAddress/MACAddress.h"
+
+//#import "STDataInfo.h"
+//#import "ConstString.h"
+//#import "UIImageView+AFNetworking.h"
+//#import "NSURL+IFUnicodeURL.h"
+//#import "KNFonts.h"
+//#import "KNDefines.h"
+//#import "Macros.h"
+//#import "SVProgressHUD.h"
+//#import "NSString+Validator.h"
+//#import "Toast+UIView.h"
+//#import "ServiceMethod.h"
+//#import "CommManager.h"
+//#import "Common.h"
+
+#endif
+
+#endif

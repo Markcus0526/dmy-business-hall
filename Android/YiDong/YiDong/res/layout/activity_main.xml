@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/rlMainBack"
+              android:background="@drawable/mainmenuback">
+    <TextView
+            android:layout_width="200px"
+            android:layout_height="70px"
+            android:text="@string/Province"
+            android:id="@+id/lblMain_Province" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50px" android:layout_marginTop="200px" android:textColor="@color/white"
+            android:textSize="@dimen/Label_SmallFontSize" android:gravity="center_vertical|right"/>
+    <TextView
+            android:layout_width="320px"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_prov" android:layout_alignTop="@+id/lblMain_Province"
+            android:layout_alignBottom="@+id/lblMain_Province" android:layout_toRightOf="@+id/lblMain_Province"
+            android:layout_marginLeft="100px" android:textColor="#000000" android:textSize="32px"
+            android:gravity="center_vertical" android:background="@color/light_gray" android:paddingLeft="10px"/>
+    <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:id="@+id/imageView" android:background="@drawable/downarrow"
+            android:layout_alignTop="@+id/txt_prov" android:layout_alignRight="@+id/txt_prov"
+            android:layout_marginTop="20px" android:layout_marginRight="15px"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sel_prov" android:background="@drawable/btn_empty"
+            android:layout_alignTop="@+id/txt_prov" android:layout_alignLeft="@+id/txt_prov"
+            android:layout_alignBottom="@+id/txt_prov" android:layout_alignRight="@+id/txt_prov"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:text="@string/City"
+            android:id="@+id/lblMain_City" android:layout_below="@+id/lblMain_Province"
+            android:layout_alignLeft="@+id/lblMain_Province" android:layout_marginTop="50px"
+            android:layout_alignRight="@+id/lblMain_Province" android:textColor="@color/white"
+            android:textSize="@dimen/Label_SmallFontSize" android:gravity="center_vertical|right"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_city" android:background="@color/light_gray" android:textColor="#000000"
+            android:textSize="32px" android:layout_alignLeft="@+id/txt_prov" android:layout_alignRight="@+id/txt_prov"
+            android:layout_alignTop="@+id/lblMain_City" android:layout_alignBottom="@+id/lblMain_City"
+            android:gravity="center_vertical" android:paddingLeft="10px"/>
+    <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:id="@+id/imageView2" android:background="@drawable/downarrow"
+            android:layout_alignTop="@+id/txt_city" android:layout_alignRight="@+id/txt_city"
+            android:layout_marginTop="20px" android:layout_marginRight="15px"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sel_city" android:background="@drawable/btn_empty"
+            android:layout_alignTop="@+id/txt_city" android:layout_alignLeft="@+id/txt_city"
+            android:layout_alignBottom="@+id/txt_city" android:layout_alignRight="@+id/txt_city"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:text="@string/Region"
+            android:id="@+id/lblMain_Region" android:layout_below="@+id/lblMain_City"
+            android:layout_alignLeft="@+id/lblMain_City" android:layout_marginTop="50px"
+            android:layout_alignRight="@+id/lblMain_City" android:gravity="center_vertical|right"
+            android:textColor="@color/white" android:textSize="@dimen/Label_SmallFontSize"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_area" android:background="@color/light_gray" android:textColor="#000000"
+            android:textSize="32px" android:layout_alignLeft="@+id/txt_prov" android:layout_alignRight="@+id/txt_prov"
+            android:layout_alignTop="@+id/lblMain_Region" android:layout_alignBottom="@+id/lblMain_Region"
+            android:gravity="center_vertical" android:paddingLeft="10px"/>
+    <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:id="@+id/imageView3" android:background="@drawable/downarrow"
+            android:layout_alignTop="@+id/txt_area" android:layout_alignRight="@+id/txt_area"
+            android:layout_marginTop="20px" android:layout_marginRight="15px"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sel_area" android:background="@drawable/btn_empty"
+            android:layout_alignTop="@+id/txt_area" android:layout_alignLeft="@+id/txt_area"
+            android:layout_alignBottom="@+id/txt_area" android:layout_alignRight="@+id/txt_area"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:text="@string/Market"
+            android:id="@+id/lblMain_Market" android:layout_below="@+id/lblMain_Region"
+            android:layout_alignLeft="@+id/lblMain_Region" android:layout_marginTop="50px"
+            android:layout_alignRight="@+id/lblMain_Region" android:gravity="center_vertical|right"
+            android:textColor="@color/white" android:textSize="@dimen/Label_SmallFontSize"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_shop" android:background="@color/light_gray" android:textColor="#000000"
+            android:textSize="32px" android:layout_alignLeft="@+id/txt_prov" android:layout_alignRight="@+id/txt_prov"
+            android:layout_alignTop="@+id/lblMain_Market" android:layout_alignBottom="@+id/lblMain_Market"
+            android:gravity="center_vertical" android:paddingLeft="10px" android:ellipsize="end"
+            android:singleLine="true"/>
+    <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:id="@+id/imageView4" android:background="@drawable/downarrow"
+            android:layout_alignTop="@+id/txt_shop" android:layout_alignRight="@+id/txt_shop"
+            android:layout_marginTop="20px" android:layout_marginRight="15px"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sel_shop" android:background="@drawable/btn_empty"
+            android:layout_alignTop="@+id/txt_shop" android:layout_alignLeft="@+id/txt_shop"
+            android:layout_alignBottom="@+id/txt_shop" android:layout_alignRight="@+id/txt_shop"/>
+    <Button
+            android:layout_width="200px"
+            android:layout_height="80px"
+            android:text="@string/Ok"
+            android:id="@+id/btnMain_OK" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="150px" android:textColor="@color/white"
+            android:textSize="@dimen/Label_SmallFontSize" android:background="@drawable/darkbluebutton"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/list_layout" android:background="#30000000"
+            android:visibility="gone" android:clickable="true">
+        <ListView
+                android:layout_width="500px"
+                android:layout_height="600px"
+                android:id="@+id/adapter_list" android:layout_centerInParent="true" android:background="#808080"/>
+    </RelativeLayout>
+</RelativeLayout>
+

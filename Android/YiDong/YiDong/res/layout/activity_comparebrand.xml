@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/rlCompareBrandBack" android:background="@color/white">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120px" android:background="@drawable/titlebar" android:id="@+id/relativeLayout">
+    </RelativeLayout>
+    <ImageView
+            android:layout_width="157px"
+            android:layout_height="157px"
+            android:id="@+id/imgBrand_Back" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:scaleType="fitCenter"
+            android:src="@drawable/comparebackbutton" android:layout_marginBottom="20px"/>
+    <ImageView
+            android:layout_width="157px"
+            android:layout_height="157px"
+            android:id="@+id/imgBrand_Brand" android:layout_alignTop="@+id/imgBrand_Back"
+            android:layout_toLeftOf="@+id/imgBrand_Back" android:layout_marginRight="50px"
+            android:scaleType="fitCenter" android:src="@drawable/brandbutton"/>
+    <ImageView
+            android:layout_width="157px"
+            android:layout_height="157px"
+            android:id="@+id/imgBrand_Kind" android:layout_alignTop="@+id/imgBrand_Back"
+            android:layout_toRightOf="@+id/imgBrand_Back" android:scaleType="fitCenter"
+            android:src="@drawable/kindbutton" android:layout_marginLeft="50px"/>
+    <ListView android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:id="@+id/listCompareBrand_Datas"
+          android:layout_below="@+id/relativeLayout" android:layout_alignParentLeft="true"
+          android:layout_above="@+id/imgBrand_Back" android:layout_marginTop="20px" android:layout_marginLeft="10px"
+          android:layout_marginRight="10px" android:layout_marginBottom="15px"/>
+</RelativeLayout>
+

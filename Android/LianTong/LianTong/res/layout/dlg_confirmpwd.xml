@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/parent_layout"
+                android:background="@android:color/transparent" android:gravity="center">
+
+    <RelativeLayout
+            android:layout_width="600px"
+            android:layout_height="700px"
+            android:background="@android:color/transparent">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/light_gray">
+            <EditText
+                    android:layout_width="480px"
+                    android:layout_height="80px"
+                    android:inputType="numberPassword"
+                    android:ems="10"
+                    android:id="@+id/txtPassword" android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" android:layout_marginTop="40px" android:gravity="center"
+                    android:background="@drawable/roundlightgraywhite_frame" android:textColor="@color/gray"
+                    android:textSize="40px" android:enabled="false"/>
+            <Button
+                    android:layout_width="160px"
+                    android:layout_height="120px"
+                    android:text="1"
+                    android:id="@+id/btnOne" android:layout_below="@+id/txtPassword"
+                    android:layout_marginTop="40px"
+                    android:background="@drawable/roundtopleftgraysolid_frame" android:textColor="@color/black"
+                    android:textSize="40px" android:layout_marginLeft="60px"/>
+            <Button
+                    android:layout_width="160px"
+                    android:layout_height="120px"
+                    android:text="2"
+                    android:id="@+id/btnTwo" android:layout_alignTop="@+id/btnOne"
+                    android:layout_toRightOf="@+id/btnOne" android:background="@drawable/rounddarkgraysolid_frame"
+                    android:textColor="@color/black" android:textSize="40px"/>
+            <Button
+                    android:layout_width="160px"
+                    android:layout_height="120px"
+                    android:text="3"
+                    android:id="@+id/btnThree" android:layout_alignTop="@+id/btnTwo"
+                    android:layout_toRightOf="@+id/btnTwo" android:background="@drawable/roundtoprightgraysolid_frame"
+                    android:textColor="@color/black" android:textSize="40px"/>
+            <Button
+                    android:layout_width="160px"
+                    android:layout_height="120px"
+                    android:text="4"
+                    android:id="@+id/btnFour" android:layout_below="@+id/btnOne" android:layout_alignLeft="@+id/btnOne"
+                    android:background="@drawable/rounddarkgraysolid_frame" android:textColor="@color/black"
+                    android:textSize="40px"/>
+            <Button
+                    android:layout_width="160px"
+                    android:layout_height="120px"
+                    android:text="5"
+                    android:id="@+id/btnFive" android:layout_below="@+id/btnTwo" android:layout_alignLeft="@+id/btnTwo"
+                    android:textSize="40px" android:textColor="@color/black"
+                    android:background="@drawable/rounddarkgraysolid_frame"/>
+            <Button
+                    android:layout_width="160px"
+                    android:layout_height="120px"
+                    android:text="6"
+                    android:id="@+id/btnSix" android:layout_below="@+id/btnThree"
+                    android:layout_toRightOf="@+id/btnFive" android:background="@drawable/rounddarkgraysolid_frame"
+                    android:textColor="@color/black" android:textSize="40px"/>
+            <Button
+                    android:layout_width="160px"
+                    android:layout_height="120px"
+                    android:text="7"
+                    android:id="@+id/btnSeven" android:layout_below="@+id/btnFour"
+                    android:layout_alignLeft="@+id/btnFour" android:textSize="40px"
+                    android:textColor="@color/black" android:background="@drawable/rounddarkgraysolid_frame"/>
+            <Button
+                    android:layout_width="160px"
+                    android:layout_height="120px"
+                    android:text="8"
+                    android:id="@+id/btnEight" android:layout_below="@+id/btnFour"
+                    android:layout_toRightOf="@+id/btnFour" android:background="@drawable/rounddarkgraysolid_frame"
+                    android:textColor="@color/black" android:textSize="40px"/>
+            <Button
+                    android:layout_width="160px"
+                    android:layout_height="120px"
+                    android:text="9"
+                    android:id="@+id/btnNine" android:layout_below="@+id/btnFive"
+                    android:layout_toRightOf="@+id/btnFive" android:textSize="40px"
+                    android:textColor="@color/black" android:background="@drawable/rounddarkgraysolid_frame"/>
+            <Button
+                    android:layout_width="160px"
+                    android:layout_height="120px"
+                    android:text="@string/cleartext"
+                    android:id="@+id/btnClear" android:layout_below="@+id/btnSeven"
+                    android:layout_alignLeft="@+id/btnSeven"
+                    android:background="@drawable/roundbottomleftgraysolid_frame"
+                    android:textColor="@color/black" android:textSize="40px"/>
+            <Button
+                    android:layout_width="160px"
+                    android:layout_height="120px"
+                    android:text="0"
+                    android:id="@+id/btnZero" android:layout_below="@+id/btnEight"
+                    android:layout_alignLeft="@+id/btnEight" android:textSize="40px"
+                    android:textColor="@color/black" android:background="@drawable/rounddarkgraysolid_frame"/>
+            <Button
+                    android:layout_width="160px"
+                    android:layout_height="120px"
+                    android:text="@string/Ok"
+                    android:id="@+id/btnOk" android:layout_below="@+id/btnEight"
+                    android:layout_toRightOf="@+id/btnEight"
+                    android:background="@drawable/roundbottomrightgraysolid_frame"
+                    android:textColor="@color/black" android:textSize="40px"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

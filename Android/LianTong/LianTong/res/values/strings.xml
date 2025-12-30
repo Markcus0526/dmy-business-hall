@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">专家陪购</string>
+    <string name="Province">省 ：</string>
+    <string name="City">市 ：</string>
+    <string name="Region">区 ：</string>
+    <string name="Market">营业厅 ：</string>
+    <string name="Ok">确 定</string>
+    <string name="Cancel">取 消</string>
+    <string name="VideoFile_Error">视频文件加载的时候发生错误了...</string>
+    <string name="NotificationTitle">手机展示通知</string>
+    <string name="NotificationData">手机展示通知</string>
+    <string name="exit">体验手机</string>
+    <string name="PhoneFeature">手机亮点</string>
+    <string name="TagFeature">购机套餐</string>
+    <string name="AppBusiness">应用业务</string>
+    <string name="CompareBrand">同品牌</string>
+    <string name="CompareKind">同类型</string>
+    <string name="noexist_bndspc">对当品牌的设定好的数据不存在.</string>
+    <string name="noexist_img">图品数据不存在</string>
+    <string name="service_error">服务器里边错误</string>
+    <string name="network_error">网通讯错误</string>
+    <string name="waiting">请稍等...</string>
+    <string name="wellcome">欢迎您！</string>
+    <string name="oneitem">一等奖 :</string>
+    <string name="twoitem">二等奖 :</string>
+    <string name="threeitem">三等奖 :</string>
+    <string name="fouritem">四等奖 :</string>
+    <string name="fiveitem">五等奖 :</string>
+    <string name="sixitem">六等奖 :</string>
+    <string name="video_error">现在的视频资料是旧的</string>
+    <string name="download_video">您下载新的视频文件吗?</string>
+    <string name="download_success">下载成功</string>
+    <string name="download_fail">下载失败</string>
+    <string name="STR_LOADING">加载中...</string>
+    <string name="insertpassword">请输入密码</string>
+    <string name="gift_success">产品兑换成功</string>
+    <string name="gift_fail">产品兑换失败</string>
+    <string name="notcontent">无内容</string>
+    <string name="passwrd_notmatch">您输入的密码不一致</string>
+    <string name="cleartext">清 空</string>
+    <string name="passmaxlength">密码是四个字位</string>
+    <string name="refpricetitle">价钱 ：</string>
+    <string name="phonesizetitle">尺寸 ：</string>
+    <string name="cputitle">处理器 ：</string>
+    <string name="screensizetitle">屏幕尺寸 ：</string>
+    <string name="memsizetitle">内存 ：</string>
+    <string name="cameratitle">摄像头 ：</string>
+    <string name="osverstiontitle">系统版本 ：</string>
+
+    <string name="ProvinceSelectHint">请选择省</string>
+    <string-array name="ProvinceList">
+        <item >北京</item>
+        <item >上海</item>
+        <item >天津</item>
+        <item >重庆</item>
+        <item >安徽</item>
+        <item >河北</item>
+        <item >黑龙江</item>
+        <item >吉林</item>
+        <item >辽宁</item>
+        <item >内蒙古</item>
+    </string-array>
+
+    <string name="CitySelectHint">请选择市</string>
+    <string-array name="CityList">
+        <item >沈阳市</item>
+        <item >大连市</item>
+        <item >鞍山市</item>
+        <item >抚顺市</item>
+        <item >本溪市</item>
+        <item >丹东市</item>
+        <item >锦州市</item>
+        <item >辽阳市</item>
+        <item >铁岭市</item>
+        <item >朝阳市</item>
+    </string-array>
+
+    <string name="RegionSelectHint">请选择区</string>
+    <string-array name="RegionList">
+        <item >沈河区</item>
+        <item >皇姑区</item>
+        <item >和平区</item>
+        <item >大东区</item>
+        <item >铁西区</item>
+        <item >苏家屯区</item>
+        <item >东陵区</item>
+        <item >新城子区</item>
+        <item >于洪区</item>
+        <item >其它</item>
+    </string-array>
+
+</resources>

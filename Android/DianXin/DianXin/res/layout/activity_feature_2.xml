@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/rlFeatureBack" >
+    <!--
+    <ImageView
+            android:layout_width="15px"
+            android:layout_height="15px"
+            android:id="@+id/imgMark2"
+            android:src="@drawable/grayballoon"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:layout_marginBottom="25px" android:scaleType="fitCenter"/>
+    <ImageView
+            android:layout_width="15px"
+            android:layout_height="15px"
+            android:id="@+id/imgMark1"
+            android:visibility="gone"
+            android:layout_alignTop="@+id/imgMark2" android:layout_toLeftOf="@+id/imgMark2"
+            android:layout_marginRight="15px" android:src="@drawable/redballoon" android:scaleType="fitCenter"/>
+    <ImageView
+            android:layout_width="15px"
+            android:layout_height="15px"
+            android:id="@+id/imgMark3"
+            android:visibility="gone"
+            android:layout_alignTop="@+id/imgMark2" android:layout_toRightOf="@+id/imgMark2"
+            android:layout_marginLeft="15px" android:src="@drawable/grayballoon" android:scaleType="fitCenter"/>
+     -->
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120px" android:background="@drawable/titlebar_2" android:id="@+id/rlFeature_Back">
+    </RelativeLayout>
+    <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewFeature" android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rlFeature_Back">
+        <!--
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back1" >
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back2" >
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back3" >
+        </RelativeLayout>
+        -->
+    </ViewFlipper>
+    <ImageView
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:id="@+id/imgCompare"
+            android:scaleType="fitCenter" android:src="@drawable/comparebackbutton_2"
+            android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50px" android:layout_marginBottom="20px"/>
+</RelativeLayout>
+

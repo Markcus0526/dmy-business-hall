@@ -1,0 +1,265 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%@ Import Namespace="YingytSite.Models" %>
+
+<% var navinfo = (List<TopNavInfo>)ViewData["navinfo"]; %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8" />
+	<title>
+    <% int syskind = int.Parse(ConfigurationManager.AppSettings["SystemKind"].ToString()); %>
+    <% if (syskind == 1) {  //中国移动 %>
+        中国移动-营业厅手机展示系统
+        <% }
+       else if (syskind == 2)   //联通
+       { %>
+        中国联通-营业厅手机展示系统
+    <% }
+       else if (syskind == 3)   //电信
+       { %>
+        中国电信-营业厅手机展示系统
+    <% } %>
+    </title>
+
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+	<!-- bootstrap & fontawesome -->
+	<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/font-awesome.min.css" />
+
+    <asp:ContentPlaceHolder ID="PageStyle" runat="server" />
+
+	<!-- ace styles -->
+	<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/ace.min.css" />
+	<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/style.css" />
+
+	<!--[if lte IE 9]>
+		<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/ace-part2.min.css" />
+	<![endif]-->
+	<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/ace-skins.min.css" />
+	<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/ace-rtl.min.css" />
+
+	<!--[if lte IE 9]>
+		<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/ace-ie.min.css" />
+	<![endif]-->
+
+	<!-- inline styles related to this page -->
+
+	<!-- ace settings handler -->
+	<script src="<%= ViewData["rootUri"] %>content/js/ace-extra.min.js"></script>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+	<!--[if lte IE 8]>
+	<script src="<%= ViewData["rootUri"] %>content/js/html5shiv.js"></script>
+	<script src="<%= ViewData["rootUri"] %>content/js/respond.min.js"></script>
+	<![endif]-->
+
+    
+        <script type="text/javascript" src="<%= ViewData["rootUri"] %>Content/js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="<%= ViewData["rootUri"] %>Content/js/ui/jquery.ui.core.js"></script>
+        <script type="text/javascript" src="<%= ViewData["rootUri"] %>Content/js/ui/jquery.ui.widget.js"></script>
+
+		<!--[if !IE]> -->
+		<!--<script src="<%= ViewData["rootUri"] %>content/js/jquery.min.js"></script>-->
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+        <script src="<%= ViewData["rootUri"] %>content/js/jquery.minie.js"></script>
+        <![endif]-->
+
+		<!--[if !IE]> -->
+		<!--<script type="text/javascript">
+		    window.jQuery || document.write("<script src='<%= ViewData["rootUri"] %>content/js/jquery.min.js'>" + "<" + "/script>");
+		</script>-->
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+        <script type="text/javascript">
+         window.jQuery || document.write("<script src='<%= ViewData["rootUri"] %>content/js/jquery1x.min.js'>"+"<"+"/script>");
+        </script>
+        <![endif]-->
+
+    <script type="text/javascript">
+        var rootUri = "<%= ViewData["rootUri"] %>";
+    </script>
+</head>
+
+	<body class="no-skin">
+		<div id="navbar" class="navbar navbar-default navbar-collapse h-navbar">
+			<script type="text/javascript">
+			    try { ace.settings.check('navbar', 'fixed') } catch (e) { }
+			</script>
+
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+                    
+					<a href="#" class="navbar-brand">
+                        <% 
+                            string llogourl = "";
+                            if (syskind == 1) {  //中国移动
+                                llogourl = "content/img/logo.png";
+                            }
+                            else if (syskind == 2)   //联通
+                            {
+                                llogourl = "content/img/logo_lt.jpg";
+                            }
+                            else if (syskind == 3)   //电信
+                            {
+                                llogourl = "content/img/logo_dx.jpg";
+                            } 
+                        %>
+                        <img src="<%= ViewData["rootUri"] %><%= llogourl %>" style="max-height:26px;" />
+						<small>
+							营业厅手机展示系统
+						</small>
+					</a>
+
+					<button class="pull-right navbar-toggle navbar-toggle-img collapsed" type="button" data-toggle="collapse" data-target=".navbar-buttons,.navbar-menu">
+						<span class="sr-only">Toggle user menu</span>
+
+						<img src="<%= ViewData["rootUri"] %>Content/avatars/user.jpg" alt="账号图片" />
+					</button>
+
+					<button class="pull-right navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".sidebar">
+						<span class="sr-only">Toggle sidebar</span>
+
+						<span class="icon-bar"></span>
+
+						<span class="icon-bar"></span>
+
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+<%
+    FormsIdentity fId = (FormsIdentity)HttpContext.Current.User.Identity;
+    FormsAuthenticationTicket authTicket = fId.Ticket;
+     %>
+				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+						<li class="light-blue">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" src="/content/avatars/user.jpg" alt="Jason's Photo" />
+								<span class="user-info">
+									<small>您好,</small>
+									<%= authTicket.Name %>
+								</span>
+
+								<i class="ace-icon fa fa-caret-down"></i>
+							</a>
+
+							<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="<%= ViewData["rootUri"] %>User/ChangePwd">
+										<i class="ace-icon fa fa-user"></i>
+										修改密码
+									</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="<%= ViewData["rootUri"] %>Account/LogOff">
+										<i class="ace-icon fa fa-power-off"></i>
+										退出
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /.navbar-container -->
+		</div>
+
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+			    try { ace.settings.check('main-container', 'fixed') } catch (e) { }
+			</script>
+
+			<div id="sidebar" class="sidebar responsive">
+
+                <% Html.RenderPartial("LeftNav", ViewContext.ViewData); %>
+
+			</div>
+
+			<div class="main-content">
+				<div class="breadcrumbs" id="breadcrumbs">
+					<script type="text/javascript">
+					    try { ace.settings.check('breadcrumbs', 'fixed') } catch (e) { }
+					</script>
+
+					<ul class="breadcrumb">
+						<li>
+							<i class="ace-icon fa fa-home home-icon"></i>
+							<a href="<%= ViewData["rootUri"] %>">Home</a>
+						</li>
+                        <% foreach (var item in navinfo)
+                           {
+                               if (!item.isend)
+                               { %>
+						        <li>
+							        <a href="<%= item.linkurl %>"><%= item.title%></a>
+						        </li>
+
+                               <% 
+                               }
+                               else
+                               { %>
+        						<li class="active"><%= item.title %></li>
+                               <% 
+                               }
+                                %>
+                        <% } %>
+					</ul><!-- /.breadcrumb -->
+
+					<!--<div class="nav-search" id="nav-search">
+						<form class="form-search">
+							<span class="input-icon">
+								<input type="text" placeholder="请搜索 ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+								<i class="ace-icon fa fa-search nav-search-icon"></i>
+							</span>
+						</form>
+					</div><!-- /.nav-search -->
+				</div>
+				<div class="page-content">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+				</div><!-- /.page-content -->
+			</div><!-- /.main-content -->
+
+			<div class="footer">
+				<div class="footer-inner">
+					<div class="footer-content">
+						<span class="bigger-120">
+							<span class="blue bolder">德铭源科技有限公司</span>
+							&copy; 2013-2014
+						</span>
+
+						&nbsp; &nbsp;
+					</div>
+				</div>
+			</div>
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<script type="text/javascript">
+		    if ('ontouchstart' in document.documentElement) document.write("<script src='<%= ViewData["rootUri"] %>content/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+		</script>
+		<script src="<%= ViewData["rootUri"] %>content/js/bootstrap.min.js"></script>
+
+        <asp:ContentPlaceHolder ID="PageScripts" runat="server" />
+
+		<!-- ace scripts -->
+		<script src="<%= ViewData["rootUri"] %>content/js/ace-elements.min.js"></script>
+		<script src="<%= ViewData["rootUri"] %>content/js/ace.min.js"></script>
+
+		<!-- inline scripts related to this page -->
+	</body>
+</html>

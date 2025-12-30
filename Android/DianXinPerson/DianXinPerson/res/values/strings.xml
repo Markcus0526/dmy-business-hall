@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">专家陪购客户端</string>
+    <string name="Province">省 ：</string>
+    <string name="City">市 ：</string>
+    <string name="Region">区 ：</string>
+    <string name="Market">营业厅 ：</string>
+    <string name="STR_PRICE">价格 ：</string>
+    <string name="STR_BRAND">品牌 ：</string>
+    <string name="STR_TYPE">型号 ：</string>
+    <string name="STR_OK">确 定</string>
+    <string name="STR_CANCEL">取 消</string>
+    <string name="STR_PLEASE_WAIT">请稍候...</string>
+    <string name="STR_LOADING">加载中...</string>
+    <string name="STR_CONFIRM_EXIT">确定要退出软件吗?</string>
+    <string name="STR_PLEASE_INPUTPRICE">请输入正确的价格范围</string>
+    <string name="STR_PHONE_PRICE">参考价格：</string>
+    <string name="STR_PHONE_CPU">处理器：</string>
+    <string name="STR_PHONE_SCRSIZE">屏幕尺寸：</string>
+    <string name="STR_PHONE_CAM">摄像头：</string>
+    <string name="STR_PHONE_SYSVER">系统版本：</string>
+    <string name="STR_YUAN">元</string>
+
+
+
+    <string name="TAG_KEY_WIDTH">resolution_set_key_width</string>
+    <string name="TAG_KEY_HEIGHT">resolution_set_key_height</string>
+    <string name="TAG_KEY_MINWIDTH">resolution_set_key_minwidth</string>
+    <string name="TAG_KEY_MINHEIGHT">resolution_set_key_minheight</string>
+    <string name="TAG_KEY_PADDINGLEFT">resolution_set_key_pleft</string>
+    <string name="TAG_KEY_PADDINGTOP">resolution_set_key_ptop</string>
+    <string name="TAG_KEY_PADDINGRIGHT">resolution_set_key_pright</string>
+    <string name="TAG_KEY_PADDINGBOTTOM">resolution_set_key_pbottom</string>
+    <string name="TAG_KEY_MARGINLEFT">resolution_set_key_mleft</string>
+    <string name="TAG_KEY_MARGINTOP">resolution_set_key_mtop</string>
+    <string name="TAG_KEY_MARGINRIGHT">resolution_set_key_mtop</string>
+    <string name="TAG_KEY_MARGINBOTTOM">resolution_set_key_mbottom</string>
+    <string name="TAG_KEY_FONTSIZE">resolution_set_key_fontsize</string>
+</resources>

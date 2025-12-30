@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/rlCourtesyBack"
+              android:background="@color/white">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120px" android:background="@drawable/titlebar" android:id="@+id/relativeLayout">
+    </RelativeLayout>
+    <ImageView
+            android:layout_width="580px"
+            android:layout_height="580px"
+            android:id="@+id/imgCourtesyBack"
+            android:scaleType="centerInside" android:src="@drawable/courtesyback"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px" android:layout_below="@+id/relativeLayout"/>
+    <ImageView
+            android:layout_width="180px"
+            android:layout_height="315px"
+            android:id="@+id/imgNeedle"
+            android:scaleType="fitCenter" android:src="@drawable/needle" android:layout_alignTop="@+id/imgCourtesyBack"
+            android:layout_centerHorizontal="true" android:layout_marginTop="62px"/>
+    <RelativeLayout
+            android:layout_width="580px"
+            android:layout_height="330px"
+            android:layout_alignLeft="@+id/imgCourtesyBack" android:background="@drawable/youhuiback"
+            android:layout_marginTop="20px" android:layout_below="@+id/imgCourtesyBack"
+            android:id="@+id/rlMainMenu_YouHuiBack">
+    </RelativeLayout>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="320px"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/txtCourtesy_Item"
+            android:layout_alignLeft="@+id/rlMainMenu_YouHuiBack"
+            android:layout_alignRight="@+id/rlMainMenu_YouHuiBack" android:background="@android:color/transparent"
+            android:enabled="false"
+            android:textSize="25px" android:layout_alignTop="@+id/rlMainMenu_YouHuiBack"
+            android:layout_marginLeft="110px" android:layout_marginTop="30px" android:layout_marginBottom="30px"
+            android:layout_alignBottom="@+id/rlMainMenu_YouHuiBack" android:layout_marginRight="10px"
+            android:lineSpacingMultiplier="1.2" android:gravity="center_vertical"/>
+    <Button
+            android:layout_width="200px"
+            android:layout_height="80px"
+            android:text="@string/Ok"
+            android:id="@+id/btnCourtesy_Send"
+            android:layout_alignRight="@+id/txtCourtesy_Item"
+            android:background="@drawable/darkbluebutton" android:textColor="@color/white"
+            android:textSize="@dimen/Label_SmallFontSize" android:visibility="invisible"
+            android:layout_alignParentBottom="true" android:layout_marginBottom="20px"/>
+    <EditText
+            android:layout_width="300px"
+            android:layout_height="80px"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txtCourtesy_Password"
+            android:layout_alignLeft="@+id/txtCourtesy_Item"
+            android:background="@drawable/rectgray" android:ellipsize="end" android:gravity="center_vertical|left"
+            android:textColor="@color/black" android:textSize="@dimen/Label_SmallFontSize" android:visibility="invisible"
+            android:layout_marginBottom="20px" android:layout_alignParentBottom="true" android:paddingLeft="10px"
+            android:password="false" android:hint="@string/insertpassword"/>
+    <Button
+            android:layout_width="200px"
+            android:layout_height="80px"
+            android:text="试一试"
+            android:id="@+id/btnCourtesy_Start"
+            android:background="@drawable/rotationbutton"
+            android:textColor="@color/white" android:textSize="@dimen/Label_SmallFontSize"
+            android:layout_alignTop="@+id/txtCourtesy_Password" android:layout_toLeftOf="@+id/btnCourtesy_Send"/>
+
+</RelativeLayout>

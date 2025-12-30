@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15, 20.25" name="YingytDB">
+  <DataContextMoniker Name="/YingytDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="50ab42f6-ef28-4d95-b3b1-ad1338930a33" absoluteBounds="3.5, 4.875, 2, 2.2016829427083344">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="614f4672-797e-4b40-b785-a5f4801b6bc6" absoluteBounds="3.515, 5.335, 1.9700000000000002, 1.6416829427083335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bac2dc6b-e99a-4446-9fd1-688b8cec1aa1" absoluteBounds="6.75, 0.75, 2, 2.3786035156250005">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_video" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0010117-67a0-4692-b404-bb577cf226f4" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.818603515625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="67005326-780b-403b-b5c7-a0ebf733e7a2" absoluteBounds="0.75, 5.25, 2, 1.4940006510416666">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_adminrole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2942c069-3db0-461c-a58f-380b858f8d88" absoluteBounds="0.765, 5.71, 1.9700000000000002, 0.93400065104166674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ab80f046-5d05-4c02-a098-0a6e54c34d2c" absoluteBounds="0.75, 1, 2, 2.2016829427083335">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_androidbrand" />
+      <nestedChildShapes>
+        <elementListCompartment Id="39c7bc4c-5db6-4988-aa63-851d11a43be9" absoluteBounds="0.765, 1.46, 1.9700000000000002, 1.6416829427083335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de99bb82-d50d-4f0a-9533-6c018545d734" absoluteBounds="6.75, 4.75, 2, 2.3786035156250005">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_androiddata" />
+      <nestedChildShapes>
+        <elementListCompartment Id="46686f84-5f4e-4d44-8ea7-64846db3caea" absoluteBounds="6.765, 5.21, 1.9700000000000002, 1.818603515625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2971fc8e-827d-42aa-8608-6420dc0b5260" absoluteBounds="0.75, 8.75, 2, 1.8478417968749987">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_androiddatalist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f3a3d656-42fc-49e5-a6c7-9234c04cc88f" absoluteBounds="0.765, 9.21, 1.9700000000000002, 1.287841796875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b3fa26f-31fb-4c13-8075-b0d91864a34d" absoluteBounds="3.75, 8.75, 2, 4.8554915364583309">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_androiddetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eb0f328c-3b35-45bd-9cab-60ea24bc933f" absoluteBounds="3.765, 9.21, 1.9700000000000002, 4.295491536458333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="697a3433-62a1-4549-adfd-e1daea8c38dd" absoluteBounds="6.75, 8.75, 2, 3.2632063802083309">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_androiddetrel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a83496c-d0ad-4635-ac5d-351d8f06ca3a" absoluteBounds="6.765, 9.21, 1.9700000000000002, 2.703206380208333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="070bb59a-6359-4d13-84c8-b5bf41cf767a" absoluteBounds="3.5, 1, 2, 2.3786035156250005">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_androidspec" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0e24a78-5093-4fd8-9e51-37a37b7525c9" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.818603515625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c81d3da9-7d87-4d92-a24b-0aedba614d8a" absoluteBounds="9.75, 0.75, 2, 1.6709212239583329">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_ecsregion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="66b3b441-dd23-4af0-8fd7-0b842e072a39" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.1109212239583333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b14984af-2bd5-4289-bdaa-cf4c1746f696" absoluteBounds="9.75, 3.75, 2, 4.1478092447916666">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_gift" />
+      <nestedChildShapes>
+        <elementListCompartment Id="963bac6d-e986-4cce-96ed-9608c5ac4c83" absoluteBounds="9.765, 4.21, 1.9700000000000002, 3.587809244791667" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a8d8590f-5705-4132-b005-e8297c24732b" absoluteBounds="9.75, 8.75, 2, 2.0247623697916666">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_phoneread" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ef212a4-cdb5-4935-b1a4-5e703d2262b9" absoluteBounds="9.765, 9.21, 1.9700000000000002, 1.4647623697916665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f41c8642-52e6-4865-843c-11debd410a8d" absoluteBounds="9.75, 11.75, 2, 2.2016829427083344">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_photo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6fdd2ce-fc36-4268-a137-c7a4aca629d9" absoluteBounds="9.765, 12.21, 1.9700000000000002, 1.6416829427083335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="74e0f5d7-2805-4453-8e11-be39d1022872" absoluteBounds="12.75, 0.75, 2, 2.5555240885416666">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_snnumber" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d2805785-f260-460b-a9d3-95927368fe7f" absoluteBounds="12.765, 1.21, 1.9700000000000002, 1.9955240885416665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="93a451d3-3417-4675-8dec-76b8652bc682" absoluteBounds="12.75, 4.75, 2, 3.2632063802083318">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_sysnew" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b639952-0054-4f0b-b0be-14019bae127e" absoluteBounds="12.765, 5.21, 1.9700000000000002, 2.703206380208333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f817c118-8938-46be-9bf5-c5af918dc4d8" absoluteBounds="12.75, 9.75, 2, 1.6709212239583344">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_template" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d2da700-2531-4dff-90a1-ebc84af9d918" absoluteBounds="12.765, 10.21, 1.9700000000000002, 1.1109212239583333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="19a9a4af-4e79-43d2-93d3-75a175cea255" absoluteBounds="12.75, 12.75, 2, 1.4940006510416666">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_usedgiftlist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5ec233cc-9cb8-4111-9fbe-56599426eace" absoluteBounds="12.765, 13.21, 1.9700000000000002, 0.93400065104166674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf88fb63-6c64-4779-b929-a9a532b1a37e" absoluteBounds="0.75, 14.75, 2, 5.2093326822916666">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28029472-f05f-48a4-8988-5b117b284883" absoluteBounds="0.765, 15.21, 1.9700000000000002, 4.6493326822916661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb270fde-9ef8-4a51-bb02-bf6e43272580" absoluteBounds="3.75, 14.75, 2, 1.4940006510416666">
+      <DataClassMoniker Name="/YingytDBDataContext/tbl_usertemplate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2bb3b0f7-015d-4aad-bd95-9ac529c8f262" absoluteBounds="3.765, 15.21, 1.9700000000000002, 0.93400065104166674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 5.99700032552083); (3.5 : 5.99700032552083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YingytDBDataContext/tbl_adminrole/tbl_adminrole_tbl_admin" />
+      <nodes>
+        <classShapeMoniker Id="67005326-780b-403b-b5c7-a0ebf733e7a2" />
+        <classShapeMoniker Id="50ab42f6-ef28-4d95-b3b1-ad1338930a33" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.10084147135417); (3.5 : 2.10084147135417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YingytDBDataContext/tbl_androidbrand/tbl_androidbrand_tbl_androidspec" />
+      <nodes>
+        <classShapeMoniker Id="ab80f046-5d05-4c02-a098-0a6e54c34d2c" />
+        <classShapeMoniker Id="070bb59a-6359-4d13-84c8-b5bf41cf767a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

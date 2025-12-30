@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="700px"
+              android:layout_height="320px"
+              android:id="@+id/rlPhoneSpecBack" android:background="@color/white">
+    <view android:layout_width="150px"
+          android:layout_height="wrap_content"
+          class="com.damytech.Utils.SmartImageView.SmartImageView" android:id="@+id/imgPhoneSpec_Phone"
+          android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="30px"
+          android:layout_marginTop="15px" android:layout_alignParentBottom="true" android:layout_marginBottom="15px"
+          android:scaleType="fitCenter"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="65px"
+            android:id="@+id/lblPhoneSpec_Name" android:layout_alignTop="@+id/imgPhoneSpec_Phone"
+            android:layout_toRightOf="@+id/imgPhoneSpec_Phone" android:layout_marginLeft="120px"
+            android:layout_alignParentRight="true" android:layout_marginRight="10px" android:textColor="@color/orange"
+            android:textSize="35px" android:singleLine="true" android:ellipsize="end" android:gravity="center_vertical|left"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35px"
+            android:id="@+id/lblPhoneSpec_Cost" android:layout_below="@+id/lblPhoneSpec_Name"
+            android:layout_alignLeft="@+id/lblPhoneSpec_Name" android:layout_alignRight="@+id/lblPhoneSpec_Name"
+            android:textSize="28px" android:textColor="@color/dark_gray" android:gravity="center_vertical|left"
+            android:ellipsize="end" android:singleLine="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35px"
+            android:id="@+id/lblPhoneSpec_Size" android:layout_below="@+id/lblPhoneSpec_Cost"
+            android:layout_alignLeft="@+id/lblPhoneSpec_Cost" android:layout_alignRight="@+id/lblPhoneSpec_Cost"
+            android:layout_marginTop="3px" android:gravity="center_vertical|left" android:textColor="@color/dark_gray"
+            android:textSize="28px" android:singleLine="true" android:ellipsize="end"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35px"
+            android:id="@+id/lblPhoneSpec_CPU" android:layout_below="@+id/lblPhoneSpec_Size"
+            android:layout_alignLeft="@+id/lblPhoneSpec_Size" android:layout_alignRight="@+id/lblPhoneSpec_Size"
+            android:layout_marginTop="3px" android:gravity="center_vertical|left" android:textColor="@color/dark_gray"
+            android:textSize="28px" android:singleLine="true" android:ellipsize="end"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35px"
+            android:id="@+id/lblPhoneSpec_Disp" android:layout_below="@+id/lblPhoneSpec_CPU"
+            android:layout_alignLeft="@+id/lblPhoneSpec_CPU" android:layout_alignRight="@+id/lblPhoneSpec_CPU"
+            android:layout_marginTop="3px" android:gravity="center_vertical|left" android:textColor="@color/dark_gray"
+            android:textSize="28px" android:singleLine="true" android:ellipsize="end"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35px"
+            android:id="@+id/lblPhoneSpec_Camera" android:layout_below="@+id/lblPhoneSpec_Disp"
+            android:layout_alignLeft="@+id/lblPhoneSpec_Disp" android:layout_alignRight="@+id/lblPhoneSpec_Disp"
+            android:layout_marginTop="3px" android:gravity="center_vertical|left" android:textColor="@color/dark_gray"
+            android:textSize="28px" android:singleLine="true" android:ellipsize="end"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35px"
+            android:id="@+id/lblPhoneSpec_Sys" android:layout_below="@+id/lblPhoneSpec_Camera"
+            android:layout_alignLeft="@+id/lblPhoneSpec_Camera" android:layout_alignRight="@+id/lblPhoneSpec_Camera"
+            android:layout_marginTop="3px" android:gravity="center_vertical|left" android:textColor="@color/dark_gray"
+            android:textSize="28px" android:singleLine="true" android:ellipsize="end"/>
+</RelativeLayout>
+

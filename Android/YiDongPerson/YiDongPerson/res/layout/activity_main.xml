@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/parent_layout" android:background="#FFFFFF">
+    <view android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          class="com.damytech.Utils.Android_PullToRefresh.PullToRefreshScrollView" android:id="@+id/list_view"
+          android:background="@color/light_gray"/>
+    <ImageButton
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:id="@+id/btn_selcond" android:layout_alignParentRight="false"
+            android:layout_alignParentBottom="false" android:background="@drawable/btn_shop"
+            android:layout_marginLeft="410px" android:layout_marginTop="730px"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/select_layout"
+            android:clickable="true" android:visibility="gone">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:background="#000000" android:id="@+id/select_panel"
+                android:clickable="true">
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_horcenter" android:layout_centerHorizontal="true"
+                        android:visibility="invisible"/>
+                <Button
+                        android:layout_width="100px"
+                        android:layout_height="40px"
+                        android:text="@string/STR_OK"
+                        android:id="@+id/btn_ok" android:layout_toLeftOf="@+id/txt_horcenter"
+                        android:layout_below="@+id/lbl_price" android:layout_marginTop="20px"
+                        android:layout_marginRight="20px" android:background="@drawable/btn_photo"
+                        android:textColor="#000000" android:textSize="21px"/>
+                <Button
+                        android:layout_width="100px"
+                        android:layout_height="40px"
+                        android:text="@string/STR_CANCEL"
+                        android:id="@+id/btn_cancel"
+                        android:layout_alignTop="@+id/btn_ok" android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/txt_horcenter" android:background="@drawable/btn_photo"
+                        android:textColor="#000000" android:textSize="21px"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20px"
+                        android:id="@+id/separator" android:layout_below="@+id/btn_ok"/>
+                <TextView
+                        android:layout_width="90px"
+                        android:layout_height="40px"
+                        android:text="@string/Province"
+                        android:id="@+id/lbl_province" android:layout_marginTop="20px"
+                        android:textSize="21px" android:textColor="#FFFFFF" android:gravity="center_vertical|right"/>
+                <TextView
+                        android:layout_width="280px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_prov" android:layout_alignTop="@+id/lbl_province"
+                        android:layout_toRightOf="@+id/lbl_province" android:layout_marginLeft="20px"
+                        android:layout_alignParentRight="false" android:layout_alignBottom="@+id/lbl_province"
+                        android:textColor="#000000" android:textSize="21px"
+                        android:gravity="center_vertical" android:background="#fffbec" android:paddingLeft="5px"
+                        android:paddingRight="5px" android:ellipsize="end" android:lines="1"/>
+                <ImageView
+                        android:layout_width="20px"
+                        android:layout_height="20px"
+                        android:id="@+id/imageView" android:background="@drawable/downarrow"
+                        android:layout_alignTop="@+id/txt_prov" android:layout_marginTop="10px"
+                        android:layout_alignRight="@+id/txt_prov" android:layout_marginRight="10px"
+                        />
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_prov" android:layout_alignTop="@+id/txt_prov"
+                        android:layout_alignBottom="@+id/txt_prov" android:layout_alignLeft="@+id/txt_prov"
+                        android:layout_alignRight="@+id/txt_prov" android:background="@drawable/btn_empty"/>
+                <TextView
+                        android:layout_width="90px"
+                        android:layout_height="40px"
+                        android:text="@string/City"
+                        android:id="@+id/lbl_city" android:layout_below="@+id/lbl_province" android:layout_marginTop="20px"
+                        android:layout_alignLeft="@+id/lbl_province" android:textSize="21px" android:textColor="#FFFFFF"
+                        android:gravity="center_vertical|right"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_city" android:layout_alignTop="@+id/lbl_city"
+                        android:layout_alignBottom="@+id/lbl_city" android:layout_alignLeft="@+id/txt_prov"
+                        android:layout_alignRight="@+id/txt_prov" android:textColor="#000000" android:textSize="21px"
+                        android:gravity="center_vertical" android:background="#fffbec" android:paddingLeft="5px"
+                        android:paddingRight="5px" android:ellipsize="end" android:lines="1"/>
+                <ImageView
+                        android:layout_width="20px"
+                        android:layout_height="20px"
+                        android:id="@+id/imageView1" android:background="@drawable/downarrow"
+                        android:layout_alignTop="@+id/txt_city" android:layout_marginTop="10px"
+                        android:layout_alignRight="@+id/txt_city" android:layout_marginRight="10px"/>
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_city" android:layout_alignTop="@+id/txt_city"
+                        android:layout_alignLeft="@+id/txt_city" android:layout_alignBottom="@+id/txt_city"
+                        android:layout_alignRight="@+id/txt_city" android:background="@drawable/btn_empty"/>
+                <TextView
+                        android:layout_width="90px"
+                        android:layout_height="40px"
+                        android:text="@string/Region"
+                        android:id="@+id/lbl_area" android:layout_below="@+id/lbl_city" android:layout_marginTop="20px"
+                        android:layout_alignLeft="@+id/lbl_province" android:textSize="21px" android:textColor="#FFFFFF"
+                        android:gravity="center_vertical|right"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_area" android:layout_alignTop="@+id/lbl_area"
+                        android:layout_alignBottom="@+id/lbl_area" android:layout_alignLeft="@+id/txt_prov"
+                        android:layout_alignRight="@+id/txt_prov" android:textColor="#000000" android:textSize="21px"
+                        android:gravity="center_vertical" android:background="#fffbec" android:paddingLeft="5px"
+                        android:paddingRight="5px" android:ellipsize="end" android:lines="1"/>
+                <ImageView
+                        android:layout_width="20px"
+                        android:layout_height="20px"
+                        android:id="@+id/imageView2" android:background="@drawable/downarrow"
+                        android:layout_alignTop="@+id/txt_area" android:layout_marginTop="10px"
+                        android:layout_alignRight="@+id/txt_area" android:layout_marginRight="10px"/>
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_area" android:layout_alignTop="@+id/txt_area"
+                        android:layout_alignLeft="@+id/txt_area" android:layout_alignBottom="@+id/txt_area"
+                        android:layout_alignRight="@+id/txt_area" android:background="@drawable/btn_empty"/>
+                <TextView
+                        android:layout_width="90px"
+                        android:layout_height="40px"
+                        android:text="@string/Market"
+                        android:id="@+id/lbl_shop" android:layout_below="@+id/lbl_area" android:layout_marginTop="20px"
+                        android:layout_alignLeft="@+id/lbl_province" android:textSize="21px" android:textColor="#FFFFFF"
+                        android:gravity="center_vertical|right"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_shop" android:layout_alignTop="@+id/lbl_shop"
+                        android:layout_alignBottom="@+id/lbl_shop" android:layout_alignLeft="@+id/txt_prov"
+                        android:layout_alignRight="@+id/txt_prov" android:textColor="#000000" android:textSize="21px"
+                        android:gravity="center_vertical" android:background="#fffbec" android:paddingLeft="5px"
+                        android:paddingRight="5px" android:ellipsize="end" android:lines="1"/>
+                <ImageView
+                        android:layout_width="20px"
+                        android:layout_height="20px"
+                        android:id="@+id/imageView3" android:background="@drawable/downarrow"
+                        android:layout_alignTop="@+id/txt_shop" android:layout_marginTop="10px"
+                        android:layout_alignRight="@+id/txt_shop" android:layout_marginRight="10px"/>
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_shop" android:layout_alignTop="@+id/txt_shop"
+                        android:layout_alignLeft="@+id/txt_shop" android:layout_alignBottom="@+id/txt_shop"
+                        android:layout_alignRight="@+id/txt_shop" android:background="@drawable/btn_empty"/>
+                <TextView
+                        android:layout_width="70px"
+                        android:layout_height="40px"
+                        android:text="@string/STR_BRAND"
+                        android:id="@+id/lbl_brand" android:layout_below="@+id/lbl_shop"
+                        android:layout_marginTop="20px" android:gravity="center_vertical|right"
+                        android:layout_alignLeft="@+id/lbl_province" android:textColor="#FFFFFF"
+                        android:textSize="21px"/>
+                <TextView
+                        android:layout_width="140px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_brand" android:background="#fffbec"
+                        android:layout_alignTop="@+id/lbl_brand" android:layout_alignBottom="@+id/lbl_brand"
+                        android:paddingLeft="5px" android:paddingRight="5px"
+                        android:textColor="#000000" android:textSize="21px" android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/lbl_brand" android:ellipsize="end" android:lines="1"/>
+                <ImageView
+                        android:layout_width="20px"
+                        android:layout_height="20px"
+                        android:id="@+id/imageView4" android:background="@drawable/downarrow"
+                        android:layout_alignTop="@+id/txt_brand" android:layout_marginTop="10px"
+                        android:layout_marginRight="10px" android:layout_alignRight="@+id/txt_brand"/>
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_brand" android:layout_alignTop="@+id/txt_brand"
+                        android:layout_alignLeft="@+id/txt_brand" android:layout_alignBottom="@+id/txt_brand"
+                        android:layout_alignRight="@+id/txt_brand" android:background="@drawable/btn_empty"/>
+                <TextView
+                        android:layout_width="70px"
+                        android:layout_height="40px"
+                        android:text="@string/STR_TYPE"
+                        android:id="@+id/lbl_type" android:layout_toRightOf="@+id/txt_brand"
+                        android:layout_alignTop="@+id/txt_brand" android:textColor="#FFFFFF"
+                        android:gravity="center_vertical" android:layout_marginLeft="15px" android:textSize="21px"/>
+                <TextView
+                        android:layout_width="140px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_type" android:textColor="#000000" android:textSize="21px"
+                        android:layout_alignTop="@+id/lbl_type" android:layout_alignBottom="@+id/lbl_type"
+                        android:background="#fffbec" android:layout_toRightOf="@+id/lbl_type"
+                        android:gravity="center_vertical" android:ellipsize="end" android:lines="1"/>
+                <ImageView
+                        android:layout_width="20px"
+                        android:layout_height="20px"
+                        android:id="@+id/imageView5" android:layout_marginTop="10px" android:layout_marginRight="10px"
+                        android:layout_alignTop="@+id/txt_type" android:layout_alignRight="@+id/txt_type"
+                        android:background="@drawable/downarrow"/>
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_type" android:layout_alignTop="@+id/txt_type"
+                        android:layout_alignLeft="@+id/txt_type" android:layout_alignBottom="@+id/txt_type"
+                        android:layout_alignRight="@+id/txt_type" android:background="@drawable/btn_empty"/>
+                <TextView
+                        android:layout_width="90px"
+                        android:layout_height="40px"
+                        android:text="@string/STR_PRICE"
+                        android:id="@+id/lbl_price" android:layout_below="@+id/lbl_brand"
+                        android:layout_marginTop="20px" android:textColor="#FFFFFF" android:textSize="21px"
+                        android:gravity="center_vertical|right"/>
+                <EditText
+                        android:layout_width="120px"
+                        android:layout_height="40px"
+                        android:id="@+id/edt_price_from" android:layout_alignLeft="@+id/txt_prov"
+                        android:layout_alignTop="@+id/lbl_price" android:textColor="#000000"
+                        android:textIsSelectable="false" android:textSize="21px" android:background="#fffbec"
+                        android:inputType="numberDecimal" android:paddingLeft="5px" android:paddingRight="5px"
+                        android:text="0"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~"
+                        android:id="@+id/txt_wave" android:layout_alignTop="@+id/edt_price_from"
+                        android:layout_alignBottom="@+id/edt_price_from"
+                        android:layout_toRightOf="@+id/edt_price_from" android:layout_toLeftOf="@+id/edt_price_to"
+                        android:textColor="#FFFFFF" android:textSize="21px" android:gravity="center"/>
+                <EditText
+                        android:layout_width="120px"
+                        android:layout_height="40px"
+                        android:id="@+id/edt_price_to" android:layout_alignTop="@+id/lbl_price"
+                        android:layout_alignRight="@+id/txt_prov" android:textColor="#000000"
+                        android:textIsSelectable="false" android:textSize="21px" android:background="#fffbec"
+                        android:inputType="numberDecimal" android:paddingLeft="5px" android:paddingRight="5px"
+                        android:text="10000"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/list_layout"
+            android:visibility="gone" android:clickable="true">
+        <ListView
+                android:layout_width="340px"
+                android:layout_height="500px"
+                android:id="@+id/adapter_list" android:layout_centerInParent="true" android:background="#808080"/>
+    </RelativeLayout>
+</RelativeLayout>
+

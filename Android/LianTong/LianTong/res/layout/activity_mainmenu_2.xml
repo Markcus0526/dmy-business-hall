@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMainMenuBack"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120px" android:background="@drawable/titlebar_2" android:id="@+id/relativeLayout">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMainMenu_Sub"
+        android:layout_width="fill_parent"
+        android:layout_height="50px"
+        android:layout_below="@id/relativeLayout"
+        android:background="@color/gray" >
+
+        <TextView
+            android:id="@+id/lblCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Label_SmallFontSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rlMainMenu_Sub"
+            >
+
+        <view android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              class="com.damytech.Utils.SmartImageView.SmartImageView" android:id="@+id/viewMainMenu_Photo"
+              android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:scaleType="fitXY"/>
+    </RelativeLayout>
+
+    <ImageView
+            android:layout_width="157px"
+            android:layout_height="157px"
+            android:id="@+id/imgTag" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter" android:src="@drawable/tagbutton_2" android:layout_marginBottom="20px"/>
+    <ImageView
+            android:layout_width="157px"
+            android:layout_height="157px"
+            android:id="@+id/imgFeature" android:layout_alignTop="@+id/imgTag" android:layout_toLeftOf="@+id/imgTag"
+            android:layout_marginRight="50px" android:scaleType="fitCenter" android:src="@drawable/featurebutton_2"/>
+    <ImageView
+            android:layout_width="157px"
+            android:layout_height="157px"
+            android:id="@+id/imgExit" android:layout_alignTop="@+id/imgTag" android:layout_toRightOf="@+id/imgTag"
+            android:src="@drawable/exitbutton_2" android:scaleType="fitCenter" android:layout_marginLeft="50px"/>
+    <ImageView
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:id="@+id/imgCourtesy" android:layout_alignParentRight="true"
+            android:layout_marginTop="100px" android:layout_marginRight="15px" android:src="@drawable/courtesy"
+            android:scaleType="fitCenter" android:layout_below="@+id/relativeLayout"/>
+    <ImageView
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:id="@+id/imgMainMenu_Char" android:layout_alignTop="@+id/imgCourtesy"
+            android:layout_alignLeft="@+id/imgCourtesy" android:layout_alignRight="@+id/imgCourtesy"
+            android:layout_toLeftOf="@+id/imgCourtesy" android:scaleType="fitCenter" android:src="@drawable/youhui"/>
+
+</RelativeLayout>
+
